@@ -10,6 +10,7 @@ struct ContentView: View {
     @State private var savedID: UUID?
     @State private var editingExpense: Expense?
     @State private var errorMessage: String?
+    @State private var showingVoiceCapture = false
 
     private var savedExpense: Expense? {
         store.expenses.first { $0.id == savedID }
@@ -20,6 +21,7 @@ struct ContentView: View {
             NavigationStack {
                 Form {
                     Section("New expense") {
+                        Button("Voice entry", systemImage: "mic") { showingVoiceCapture = true }
                         TextField("Amount (whole rupiah, no separators)", text: $amount)
                             .keyboardType(.numberPad)
                         TextField("Description", text: $description)
@@ -53,6 +55,17 @@ struct ContentView: View {
             .tabItem { Label("Record", systemImage: "plus.circle") }
             NavigationStack { ExpenseHistoryView(store: store) }
                 .tabItem { Label("History", systemImage: "list.bullet") }
+            NavigationStack { ExpenseSummaryView(store: store) }
+                .tabItem { Label("Summary", systemImage: "sum") }
+        }
+        .sheet(isPresented: $showingVoiceCapture) {
+            VoiceCaptureView(store: store, onSaved: { expense in
+                savedID = expense.id
+                errorMessage = nil
+                showingVoiceCapture = false
+            }, onKeyboard: {
+                showingVoiceCapture = false
+            })
         }
         .sheet(item: $editingExpense) { expense in
             ExpenseEditorView(store: store, expense: expense)

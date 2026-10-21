@@ -1,6 +1,6 @@
 # Future App Comparison Checklist
 
-Baseline: user-confirmed first-version scope, October 20, 2026. No implementation exists and no criterion has passed yet.
+Baseline: user-confirmed first-version scope, October 20, 2026. Tickets 01–06 have implementation work; macOS builds, automated Swift tests, and device acceptance checks remain unexecuted. No criterion has been marked passed.
 
 Record each criterion as Pass, Fail, or Blocked, with device/build, observed result, and evidence. A grouped checkbox is complete only when every referenced criterion passes.
 

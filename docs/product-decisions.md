@@ -59,6 +59,8 @@ These do not expand the agreed first-version product scope. Validate platform be
 
 ## Platform evidence
 
+For the tickets 05–06 implementation decision, see [voice interpretation and privacy](verification-05.md): Apple Speech recognition with local interpretation, with mixed-language device accuracy and remote retention still requiring verification.
+
 - Apple's App Review Guidelines section 2.5.9 prohibit changing standard Volume Up/Down behavior. A global volume-down launcher is not a supported product assumption.
   https://developer.apple.com/app-store/review/guidelines/
 - An Action button can invoke an App Shortcut.
@@ -70,7 +72,7 @@ These do not expand the agreed first-version product scope. Validate platform be
 
 ## Status
 
-Product scope confirmed by the user on October 20, 2026. The local specification is indexed by docs/mvp-spec.md and split under docs/specs, including acceptance criteria for later app comparison. The user explicitly requested no implementation yet. No application code has been created.
+Product scope confirmed by the user on October 20, 2026. The local specification is indexed by docs/mvp-spec.md and split under docs/specs. The original planning-only restriction was superseded by authorization for tickets 01–03 on October 20 and 04–06 on October 21. Implementation exists; macOS tests and device acceptance remain pending.
 
 ## Spreadsheet integration evidence
 

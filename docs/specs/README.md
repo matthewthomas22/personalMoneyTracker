@@ -1,6 +1,6 @@
 # Voice Expense Tracker: Agreed First Version
 
-Status: product scope confirmed on October 20, 2026. Specification only; do not implement yet.
+Status: product scope confirmed on October 20, 2026. Implementation of tickets 01–03 was authorized on October 20 and tickets 04–06 on October 21. Later tickets remain deferred. Statements below describing the pre-implementation repository are historical planning context.
 
 ## Problem Statement
 
@@ -76,7 +76,7 @@ Detailed behavior:
 
 ## Out of Scope
 
-- Implementation in the current task.
+- Implementation beyond the currently authorized tickets 01–06.
 - Restoring app history from Sheets, including after reinstalling the app.
 - Two-way synchronization or importing direct spreadsheet edits.
 - Budgets, charts, category analysis, multiple currencies, shared accounts, permanent transcripts, and audio playback.

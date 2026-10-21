@@ -1,8 +1,8 @@
 # Proposed Tickets: Voice Expense Tracker
 
-Status: the user authorized implementation of tickets 01–03 on October 20, 2026. Tickets 04–12 remain proposed and outside the current implementation scope. This document is a local plan, not published tickets.
+Status: the user authorized tickets 01–03 on October 20, 2026, and the next three tickets (04–06), with one sub-agent per ticket, on October 21. Tickets 07–12 remain proposed and outside the current implementation scope. macOS tests and device verification of earlier tickets have not yet been performed. This document is a local plan, not published tickets.
 
-Source: the confirmed first-version specification and its 39 acceptance criteria. No application code exists, so no prefactoring is needed.
+Source: the confirmed first-version specification and its 39 acceptance criteria. The repository now contains an iOS implementation; acceptance checks remain pending.
 
 ## Proposed Destination
 
@@ -118,4 +118,4 @@ After approval, create one file per ticket under `.scratch/voice-expense-tracker
 
 ## Remaining Planning Decisions
 
-Tickets 01–03 are authorized for implementation in one combined commit. See [verification instructions](verification-01-03.md) for their checks and platform limitations. Tickets 04–12 still require implementation authorization. No external issues have been published.
+Tickets 01–06 are authorized for implementation. See [tickets 01–03](verification-01-03.md), [04](verification-04.md), [05](verification-05.md), and [06](verification-06.md) for checks and platform limitations. Tickets 07–12 still require implementation authorization. No external issues have been published. Code and behavioral tests do not establish acceptance until they are run on macOS and the required device checks are performed.

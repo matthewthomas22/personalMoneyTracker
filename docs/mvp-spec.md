@@ -1,6 +1,6 @@
 # Voice Expense Tracker: First Version
 
-Status: product scope confirmed by the user on October 20, 2026. The user subsequently authorized implementation of tickets 01–03 only; see [the ticket plan](ticket-plan.md) and [verification instructions](verification-01-03.md). The remaining first-version scope below is still planned.
+Status: product scope confirmed by the user on October 20, 2026. Implementation is authorized for tickets 01–06; see [the ticket plan](ticket-plan.md) and [verification instructions](verification-01-03.md). macOS tests and device acceptance checks remain pending, including for tickets 01–03. Tickets 07–12 below are still planned.
 
 This is the short scope summary. The detailed local specification is split into [overview and user stories](specs/README.md), [capture and reliability](specs/01-capture.md), [history and summaries](specs/02-history-and-summaries.md), and [Google Sheets integration](specs/03-google-sheets.md). Use the [acceptance checklist](specs/acceptance-checklist.md) to compare a future app with the agreed scope.
 
